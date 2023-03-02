@@ -14,11 +14,11 @@ function App() {
           StreamQueens <code>src/App.js</code> and save to reload.
         </p>
     
-        <Card sideCard={<CardBack movieName= "CardBack"/>}></Card>
+        <Card isFront={true}></Card>
         
-        <Card sideCard={<CardFront movieImage= {Shrek} movieTitle="SHREK!!!!"/>}></Card>
+        <Card isFront={false}></Card>
         
-        <img alt="movieImage" src={Shrek} />
+      
         
         <a
           className="App-link"
