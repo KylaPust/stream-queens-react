@@ -24,8 +24,7 @@ export default function Card(props) {
     }
     return <div onClick={handleClick} 
     style={{color:"black",border:"solid",
-    borderColor:"purple",borderWidth:"5px",width:"18rem",
-    borderRadius:"20px"}}>
+    borderColor:"purple",borderWidth:"5px",width:"10rem"}}>
         {renderCardSide()}
        </div>
 }
