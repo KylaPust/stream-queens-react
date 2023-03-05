@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import Card from "./components/card.jsx";
 import Shrek from './static/Shrek.png';
 import Barbie from './static/barbie.png';
@@ -10,7 +11,7 @@ function App() {
       <header className="App-header">
         
     
-        <Card isFront={true} movieTitle='ShrekPassedIn' 
+        <Card isFront={false} movieTitle='ShrekPassedIn' 
         movieDesc='Shrek is a movie about an ogre who lives in a swap and he wants you to stay out of it!'
         movieLink='www.shrekmovie.dotcom'
         movieImage={Shrek}></Card>

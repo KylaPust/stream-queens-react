@@ -1,6 +1,8 @@
+import React from 'react';
 import CardBack from "./cardback";
 import CardFront from "./cardfront";
 import { useState } from "react";
+
 
 export default function Card(props) {
     //useState returns an array, so we pull things out of the array to use them
