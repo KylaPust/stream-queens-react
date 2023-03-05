@@ -9,25 +9,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          StreamQueens <code>src/App.js</code> and save to reload.
-        </p>
+        
     
-        <Card isFront={true}></Card>
+        <Card isFront={true} movieTitle='ShrekPassedIn' 
+        movieDesc='Shrek is a movie about an ogre who lives in a swap and he wants you to stay out of it!'
+        movieLink='www.shrekmovie.dotcom'></Card>
         
-        <Card isFront={false}></Card>
+        <Card isFront={false} movieTitle='BarbiePassedIn' movieLink='www.google.com'></Card>
         
-      
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );

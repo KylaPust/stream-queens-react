@@ -1,6 +1,9 @@
-export default function CardBack({movieName}) {
+export default function CardBack({movieTitle, movieDesc, movieLink}) {
 
     return <div >
-        movieName: {movieName || "Unknown"}
+        movieTitle: {movieTitle || "Unknown"}
+        movieDesc: {movieDesc || "Unknown"} <br></br>
+        movieLink: {movieLink || "Unknown"}
+
     </div>
 }
