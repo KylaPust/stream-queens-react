@@ -20,7 +20,10 @@ export default function Card(props) {
             return <CardBack movieTitle={props.movieTitle} movieDesc={props.movieDesc} movieLink={props.movieLink}/>
         }
     }
-    return <div onClick={handleClick} style={{textAlign:"center",color:"red",border:"solid",borderColor:"purple",borderWidth:"5px",width:"18rem",borderRadius:"20px"}}>
+    return <div onClick={handleClick} 
+    style={{color:"black",border:"solid",
+    borderColor:"purple",borderWidth:"5px",width:"18rem",
+    borderRadius:"20px"}}>
         {renderCardSide()}
        </div>
 }
