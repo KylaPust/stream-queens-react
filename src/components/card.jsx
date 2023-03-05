@@ -19,12 +19,13 @@ export default function Card(props) {
             return <CardFront movieImage= {props.movieImage} movieTitle={props.movieTitle} movieLink={props.movieLink}/>
         }
         else {
-            return <CardBack movieTitle={props.movieTitle} movieDesc={props.movieDesc} movieLink={props.movieLink}/>
+            return <CardBack movieImage= {props.movieImage} movieTitle={props.movieTitle} movieDesc={props.movieDesc} movieLink={props.movieLink}/>
         }
     }
-    return <div onClick={handleClick} 
-    style={{color:"black",border:"solid",
-    borderColor:"purple",borderWidth:"5px",width:"10rem"}}>
-        {renderCardSide()}
+    return <div   style={{color:"black",
+    borderWidth:"5px",width:"10rem"}}><div onClick={handleClick} 
+  >{renderCardSide()}
+       </div>
+       <a href={props.movieLink} className="card-link" target="_blank" rel="noopener noreferrer">movie link</a>
        </div>
 }

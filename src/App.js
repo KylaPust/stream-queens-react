@@ -6,19 +6,20 @@ import Barbie from './static/barbie.png';
 
 function App() {
   // Insert Ajax call here
+  
   return (
     <div className="App">
       <header className="App-header">
         
     
-        <Card isFront={false} movieTitle='ShrekPassedIn' 
+        <Card isFront={false} movieTitle='Shrek' 
         movieDesc='Shrek is a movie about an ogre who lives in a swap and he wants you to stay out of it!'
-        movieLink='www.shrekmovie.dotcom'
+        movieLink='https://www.dreamworks.com/movies/shrek'
         movieImage={Shrek}></Card>
         
-        <Card isFront={false} movieTitle='BarbiePassedIn' 
+        <Card isFront={false} movieTitle='Barbie' 
         movieDesc='Everyone is so excited for the upcoming barbie movie! Greta Gerwig is Qween'
-        movieLink='www.google.com'
+        movieLink='https://www.imdb.com/title/tt1517268/'
         movieImage={Barbie}></Card>
         
       </header>
