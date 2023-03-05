@@ -3,6 +3,7 @@ export default function CardFront({movieImage, movieTitle, movieLink}) {
     return <div>
        <img height="50" alt="movieImage" href={movieLink}
        src={movieImage}/>
+       <br></br>
        {movieTitle}
     </div>
 }

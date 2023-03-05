@@ -1,6 +1,5 @@
 import CardBack from "./cardback";
 import CardFront from "./cardfront";
-import Shrek from '../static/Shrek.png';
 import { useState } from "react";
 
 export default function Card(props) {
@@ -15,7 +14,7 @@ export default function Card(props) {
     
     function renderCardSide() {
         if (isFront){
-            return <CardFront movieImage= {Shrek} movieTitle={props.movieTitle} movieLink={props.movieLink}/>
+            return <CardFront movieImage= {props.movieImage} movieTitle={props.movieTitle} movieLink={props.movieLink}/>
         }
         else {
             return <CardBack movieTitle={props.movieTitle} movieDesc={props.movieDesc} movieLink={props.movieLink}/>

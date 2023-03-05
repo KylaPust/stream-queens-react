@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Card from "./components/card.jsx";
-import CardBack from "./components/cardback.jsx";
-import CardFront from './components/cardfront';
 import Shrek from './static/Shrek.png';
+import Barbie from './static/barbie.png';
+
 function App() {
   // Insert Ajax call here
   return (
@@ -13,9 +12,13 @@ function App() {
     
         <Card isFront={true} movieTitle='ShrekPassedIn' 
         movieDesc='Shrek is a movie about an ogre who lives in a swap and he wants you to stay out of it!'
-        movieLink='www.shrekmovie.dotcom'></Card>
+        movieLink='www.shrekmovie.dotcom'
+        movieImage={Shrek}></Card>
         
-        <Card isFront={false} movieTitle='BarbiePassedIn' movieLink='www.google.com'></Card>
+        <Card isFront={false} movieTitle='BarbiePassedIn' 
+        movieDesc='Everyone is so excited for the upcoming barbie movie! Greta Gerwig is Qween'
+        movieLink='www.google.com'
+        movieImage={Barbie}></Card>
         
       </header>
     </div>
