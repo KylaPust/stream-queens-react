@@ -4,6 +4,7 @@ import Card from "./components/card.jsx";
 import Search from "./components/search.jsx";
 import Shrek from './static/Shrek.png';
 import Barbie from './static/barbie.png';
+import ApiComponent from './components/api.jsx'
 
 function App() {
   // Insert Ajax call here
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
+        <ApiComponent></ApiComponent>
         <Search></Search>
     
         <Card isFront={false} movieTitle='Shrek' 
